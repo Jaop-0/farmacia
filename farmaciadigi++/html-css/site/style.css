@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+}
+
+:root {
+    --cor1: #007AFF;
+    --cor2: #0056b3;
+    --cor3: #004794;
+    --cor4: #0059FF;
+    --cor5: #1039A1;
+    --cor6: #EFEFEF;
+    --cor7: #D4D4D4;
+    --cor8: #B4ACAC;
+    --cor9: #474545;
+    --cor10: #141313;
+    --fontpad: "Jersey 15", sans-serif;
+}
+
+body{
+    font-family: var(--fontpad);
+}
+
+#menu{
+    background-color: var(--cor1);
+    padding: 50px 0px 20px 50px;
+    margin: auto;
+}
+
+#menu h1{
+    color: #ffffff;
+    text-indent: 50px;
+    font-size: 3em;
+}
+
+#menu p{
+    background-color: #ffffff;
+    min-width: 270px;
+    max-width: 500px;
+    padding: 5px 0px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    left: 900px;
+    top: -30px;
+}
+
+nav{
+    background-color: var(--cor1);
+    padding: 10px 10px 10px 10px;
+}
+
+nav a {
+    font-size: 2em;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    transition-duration: 0.1s;    
+}
+
+nav a:hover{
+    background-color: var(--cor2);
+    color: var(--cor7);
+    border-radius: 5px 5px 0px 0px;
+    transition-duration: 0.1s;
+}
+
+nav a:active{
+    background-color: var(--cor3);
+    color: var(--cor8);
+}
+
+.carrossel-container{
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.slider-track{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-item{
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    display: block;
+}
+
+.carrossel-indicators{
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 10px;
+    transform: translate(-50%);
+    z-index: 5;
+}
+
+.indicator{
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    margin: 0 4px;
+    background-color:var(--cor8);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active{
+    background-color: #38a169;
+}
+
+.section-title{
+    text-align: center;
+    margin: 40px 0 20px;
+    color:var(--cor9)
+}
